@@ -1,24 +1,33 @@
-// Oyun ayarları — dengeyi buradan değiştirebilirsin.
+
+// HAGY: THE UNKNOWN — V0.2
+// Oyun ayarları
+
 export const CFG = {
+  // Oyuncu
   eye: 1.65,
   playerRadius: 0.38,
-  walkSpeed: 3.0,
-  runSpeed: 5.2,
-  staminaDrain: 22, // koşarken saniyede
-  staminaRegen: 16, // dururken saniyede
-  staminaRegenMoving: 9, // yürürken saniyede
-  staminaRecover: 30, // yorgunluktan çıkış eşiği
 
-  enemyPatrol: 1.9,
-  enemySearch: 2.4,
-  enemyChase: 3.8,
-  enemySight: 16,
-  enemyHearing: 9,
-  enemyLoseTime: 4.5,
+  // Hareket hızları
+  walkSpeed: 5.5,
+  runSpeed: 10.0,
+
+  // Dayanıklılık
+  staminaDrain: 12,
+  staminaRegen: 20,
+  staminaRegenMoving: 15,
+  staminaRecover: 30,
+
+  // Yaratık yapay zekası
+  enemyPatrol: 2.4,
+  enemySearch: 3.2,
+  enemyChase: 5.5,
+  enemySight: 18,
+  enemyHearing: 11,
+  enemyLoseTime: 5.0,
   catchDist: 1.0,
 
-  // Görünüm (çok karanlık / çok aydınlık gelirse buradan ayarla)
+  // Hastane atmosferi
   ambient: 0.22,
-  fogDensity: 0.075,
-  flashIntensity: 90,
+  fogDensity: 0.055,
+  flashIntensity: 110,
 } as const;
